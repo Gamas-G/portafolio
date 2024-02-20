@@ -24,7 +24,7 @@
         },
         {
           "titulo":"portafolio-angular",
-          "background":"../../../assets/img/portafolio-angular.png",
+          "background":"assets/img/portafolio-angular.png",
           "enlaces":{
               "preview":"https://gamas-g.github.io/portafolio-angular/#/home",
               "repositorio": "https://github.com/Gamas-G/portafolio-angular"
@@ -73,17 +73,17 @@
           "style":"habilidad movil",
           "frameworks":[
             {
-              "icon":"./../../assets/img/androidStudio.svg",
+              "icon":"assets/img/androidStudio.svg",
               "name":"Androi Studio",
               "alt":"icono Android Studio"
             },
             {
-              "icon":"./../../assets/img/VSCode.svg",
+              "icon":"assets/img/VSCode.svg",
               "name":"VSCode",
               "alt":"icono Visual Studio Code"
             },
             {
-              "icon":"./../../assets/img/flutter.svg",
+              "icon":"assets/img/flutter.svg",
               "name":"Flutter",
               "alt":"icono Flutter"
             }
