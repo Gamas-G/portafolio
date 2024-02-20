@@ -6,7 +6,7 @@
       "proyectos":[
         {
           "titulo":"Yotube Clone",
-          "background":"../../../assets/img/YoutubeClone.png",
+          "background":"assets/img/YoutubeClone.png",
           "enlaces":{
               "preview":"https://ichef.bbci.co.uk/images/ic/480xn/p02k743f.jpg",
               "repositorio": "https://github.com/Gamas-G/CloneYoutube"
@@ -91,12 +91,12 @@
           "lenguajes":[
             {
               "name":"C#",
-              "icon":"./../../assets/img/csharp.svg",
+              "icon":"assets/img/csharp.svg",
               "alt":"icono csharp"
             },
             {
               "name":"Dart",
-              "icon":"./../../assets/img/dart.svg",
+              "icon":"assets/img/dart.svg",
               "alt":"icono dart"
             }
           ]
@@ -106,14 +106,14 @@
           "style":"habilidad desktop",
           "frameworks":[
             {
-              "icon":"./../../assets/img/VS.svg",
+              "icon":"assets/img/VS.svg",
               "name":"VS",
               "alt":"icono Visual Studio"
             }
           ],
           "lenguajes":[
             {
-              "icon":"./../../assets/img/csharp.svg",
+              "icon":"assets/img/csharp.svg",
               "name":"C#",
               "alt":"icono csharp"
             }
@@ -124,39 +124,39 @@
           "style":"habilidad web",
           "frameworks":[
             {
-              "icon":"./../../assets/img/angular.svg",
+              "icon":"assets/img/angular.svg",
               "name":"Angular",
               "alt":"icono angular"
             },
             {
-              "icon":"./../../assets/img/react.svg",
+              "icon":"assets/img/react.svg",
               "name":"React",
               "alt":"icono react"
             },
             {
-              "icon":"./../../assets/img/VSCode.svg",
+              "icon":"assets/img/VSCode.svg",
               "name":"VSCode",
               "alt":"icono Visual Studio Code"
             }
           ],
           "lenguajes":[
             {
-              "icon":"./../../assets/img/html.svg",
+              "icon":"assets/img/html.svg",
               "name":"HTML",
               "alt":"icono html"
             },
             {
-              "icon":"./../../assets/img/css.svg",
+              "icon":"assets/img/css.svg",
               "name":"CSS",
               "alt":"icono css"
             },
             {
-              "icon":"./../../assets/img/js.svg",
+              "icon":"assets/img/js.svg",
               "name":"JS",
               "alt":"icono js"
             },
             {
-              "icon":"./../../assets/img/typescript.svg",
+              "icon":"assets/img/typescript.svg",
               "name":"TS",
               "alt":"icono ts"
             }
@@ -167,7 +167,7 @@
           "style":"habilidad db",
           "frameworks":[
             {
-              "icon":"./../../assets/img/sql.svg",
+              "icon":"assets/img/sql.svg",
               "name":"SQL Management Studio"
             }
           ],
