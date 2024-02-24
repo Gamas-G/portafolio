@@ -38,6 +38,9 @@
     gap: 30px;
     width: 80%;
   }
+  .sobre__mi p{
+    font-size: 24px;
+  }
 }
 
 /* ***** PROYECTOS ***** */
@@ -84,6 +87,14 @@ img{
 
 .proyecto__info h3{
   color: #FFFFFF;
+  font-size: 0;
+  -webkit-transition: font-size .3s ease;
+  -moz-transition:    font-size .3s ease;
+  -o-transition:      font-size .3s ease;
+  transition:         font-size .3s ease;
+}
+
+.proyecto__info:hover h3{
   font-size: 1.3rem;
 }
 
@@ -132,15 +143,21 @@ img{
   transition: 1s;
 }
 
+.enlaces, 
+.tecnologias{
+  transform: scale(0);
+  transition: all .5s ease;
+}
+.proyecto__info:hover .enlaces, 
+.proyecto__info:hover .tecnologias{
+  transform: scale(1);
+}
+
 @media only screen and (min-width:768px){
   .grid__proyectos{
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
     margin:  0 45px;
-  }
-
-  .proyecto__info h3{
-    font-size: 1.8rem;
   }
 
   .enlace-item,
@@ -151,6 +168,10 @@ img{
 
   .tecnologias{
     gap: 5px;
+  }
+
+  .proyecto__info:hover h3{
+    font-size: 1.8rem;
   }
 }
 
@@ -173,13 +194,21 @@ img{
 
 .habilidad{
   display: flex;
-  width: 185px;
+  width: 170px;
   height: 86px;
   border-radius: 13px;
   justify-content: center;
   align-items: center;
   border: none;
   font-weight: bold;
+  color: #000000;
+  font-weight: bold;
+}
+
+@media only screen and (min-width:430px){
+  .habilidad{
+    width: 185px;
+  }
 }
 
 .habilidad:hover{
@@ -336,15 +365,16 @@ background-color: #D50000;
 
 .contacto{
   text-align: center;
+  width: max-content;
 }
 
 .contacto a{
   /* font-size: 56px; */
-  font-size: 45px;
+  font-size: 30px;
 }
 
 .contacto p{
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .gmail a{
@@ -384,7 +414,6 @@ background-color: #D50000;
   }
   .informacion-img{
     width: 500px;
-    height: 569px;
   }
 }
 

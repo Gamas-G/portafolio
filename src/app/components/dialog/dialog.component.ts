@@ -19,15 +19,9 @@ export class DialogComponent implements OnInit {
 
   constructor(public dialogRef: MatDialogRef<DialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: IHabilidades,) {
+      
       this.hablidades = data
-
       this.frameworks = data.frameworks;
-
-      console.log(this.data);
-      console.log(this.hablidades);
-      
-      
-
     }
 
   ngOnInit() { }

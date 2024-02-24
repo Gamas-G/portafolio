@@ -23,10 +23,10 @@ export class PortafolioComponent{
                public dialog: MatDialog) {}
 
   mostrarDialog(habilidades:IHabilidades){
-    console.log(habilidades);
     
     this.dialog.open( DialogComponent, { 
-      width : "80%",
+      width : "max-content",
+      // width : "80%",
       data: { 
         name: habilidades.name,
         lenguajes: habilidades.lenguajes,
