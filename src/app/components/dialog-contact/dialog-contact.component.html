@@ -1,6 +1,11 @@
-<div class="info__container">
 
-  <h2>INFORMACIÓN DE CONTACTO</h2>
+
+<h2 mat-dialog-title class="modal__titel">INFORMACIÓN DE CONTACTO</h2>
+<mat-dialog-content>
+    <div class="info__container">
+  <mat-dialog-actions style="float: right;position: absolute;top: 0;right: 0;">
+    <span mat-button mat-dialog-close class="close">&times;</span>
+  </mat-dialog-actions>
 
   <div *ngFor="let telefono of infoContacto.telefonos" class="info">
   <h4>{{telefono.name}}</h4>
@@ -19,3 +24,4 @@
   </div>
 </div>
 </div>
+</mat-dialog-content>

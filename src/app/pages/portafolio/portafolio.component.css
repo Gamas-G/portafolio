@@ -426,6 +426,10 @@ background-color: #D50000;
     gap: 55px;
   }
 
+  .contactos h4{
+    font-size: 1.4rem;
+  }
+
   .informacion__img__contacto{
     width: 350px;
   }

@@ -5,10 +5,27 @@
     padding: 15px 10px;
 }
 
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  }
+
+  .modal__titel{
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
 
 @media only screen and (min-width: 768px){
     .info{
       font-size: 1.4rem;
       width: 500px;
+    }
+    .modal__titel{
+      font-size: 1.4rem;
+      font-weight: bold;
     }
   }
