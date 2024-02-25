@@ -354,10 +354,22 @@ background-color: #D50000;
   width: 80%;
 }
 
-
 .contactos{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.contactos h4{
+  border-bottom: 2.8px #DB891E solid;
+  cursor: pointer;
+}
+
+.list-contacto{
+  display: flex;
   gap: 20px;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -371,12 +383,17 @@ background-color: #D50000;
   cursor: pointer;
 }
 
-.contacto a{
+.contacto:hover{
+  transform: scale(1.2);
+  transition: transform .2s;
+}
+
+.list-contacto a{
   /* font-size: 56px; */
   font-size: 30px;
 }
 
-.contacto p{
+.list-contacto p{
   font-size: 16px;
 }
 
@@ -405,14 +422,14 @@ background-color: #D50000;
     flex-direction: row;
   }
 
-  .contactos{
+  .list-contacto{
     gap: 55px;
   }
 
   .informacion__img__contacto{
     width: 350px;
   }
-  .contacto a{
+  .list-contacto a{
     font-size: 56px;
   }
   .informacion-img{

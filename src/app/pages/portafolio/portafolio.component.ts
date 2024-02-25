@@ -38,7 +38,10 @@ export class PortafolioComponent{
   }
 
   dialogContact(){
-    this.dialog.open(DialogContatComponent);
+    this.dialog.open(DialogContatComponent,{
+      width:"max-content",
+      height:"max-content"
+    });
   }
 
 }

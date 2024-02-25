@@ -1,1 +1,21 @@
-<h1>HOLA MUNDO SOY EL DIALOGO DE CONTACTO</h1>
+<div class="info__container">
+
+  <h2>INFORMACIÓN DE CONTACTO</h2>
+
+  <div *ngFor="let telefono of infoContacto.telefonos" class="info">
+  <h4>{{telefono.name}}</h4>
+  <li>{{telefono.numero}}</li>
+</div>
+
+<div *ngFor="let redSocial of infoContacto.redesSociales" class="info">
+  <h4>{{redSocial.name}}</h4>
+  <li>{{redSocial.value}}</li>
+</div>
+
+<div class="info">
+  <h4>{{infoContacto.tituloCorreo}}</h4>
+  <div *ngFor="let correo of infoContacto.correos">
+    <li> {{correo.name}}: {{correo.direccion}}</li>
+  </div>
+</div>
+</div>

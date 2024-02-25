@@ -39,7 +39,9 @@ export class InfoPaginaService {
         this.speetch  = resp.data.speetch;
         this.linkedin = resp.data.linkedin;
 
+        this.gmailRedirect = resp.data.gmail;
         this.whatsAppRedirect = resp.data.whatsapp;
+        this.outlookRedirect = resp.data.email;
         
         this.proyectos   = resp.data.proyectos;
         this.habilidades = resp.data.habilidades;

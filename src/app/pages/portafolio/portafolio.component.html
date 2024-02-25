@@ -92,23 +92,28 @@
         <lottie-player src="https://lottie.host/62be1e7b-bf8c-4594-8336-d58e4bbba031/Na4VyQqjOS.json" background="transparent" speed="1" loop autoplay></lottie-player>
       </div>
       <div class="contactos">
-        <div (click)="dialogContact()" class="contacto gmail">
-          <!-- <a href="https://mail.google.com/mail/u/0/?hl=es#advanced-search/to=gamasrikiest37%40gmail.com&query=in%3Asent&isrefinement=true&todisplay=Gamas?compose=new" target="_blank"><i class="fa fa-regular fa-envelope envelope"></i></a> -->
-          <a><i class="fa fa-regular fa-envelope envelope"></i></a>
-          <p>Gmail</p>
-        </div>
-        <div class="contacto in">
-          <a [href]="infoPaginaService.linkedin" target="_blank"><i class="fab fa-linkedin-in linked" aria-hidden="true"></i></a>
-          <p>LinkedIn</p>
-        </div>
-        <div class="contacto whatsapp">
-          <a [href]="infoPaginaService.whatsAppRedirect"><i class="fab fa-brands fa-whatsapp"></i></a>
-          <p>WhatsApp</p>
-        </div>
-        <div (click)="dialogContact()" class="contacto outlook">
-          <a><i class="fas fa-solid fa-at"></i></a>
-          <p>Outlook</p>
-        </div>
+        <div class="list-contacto">
+          
+          <div class="contacto gmail">
+            <!-- <a href="https://mail.google.com/mail/u/0/?hl=es#advanced-search/to=gamasrikiest37%40gmail.com&query=in%3Asent&isrefinement=true&todisplay=Gamas?compose=new" target="_blank"><i class="fa fa-regular fa-envelope envelope"></i></a> -->
+            <a [href]="infoPaginaService.gmailRedirect" target="_blank"><i class="fa fa-regular fa-envelope envelope"></i></a>
+            <p>Gmail</p>
+          </div>
+          <div class="contacto in">
+            <a [href]="infoPaginaService.linkedin" target="_blank"><i class="fab fa-linkedin-in linked" aria-hidden="true"></i></a>
+            <p>LinkedIn</p>
+          </div>
+          <div class="contacto whatsapp">
+            <a [href]="infoPaginaService.whatsAppRedirect" target="_blank"><i class="fab fa-brands fa-whatsapp"></i></a>
+            <p>WhatsApp</p>
+          </div>
+          <div class="contacto outlook">
+            <a [href]="infoPaginaService.outlookRedirect" target="_blank"><i class="fas fa-solid fa-at"></i></a>
+            <p>Outlook</p>
+          </div>
+        
+        </div><!-- list-contacto -->
+        <h4 (click)="dialogContact()">Información de contactos</h4>
       </div>
     </div>
 </section>
