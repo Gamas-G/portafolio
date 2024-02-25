@@ -94,22 +94,12 @@
       <div class="contactos">
         <div class="list-contacto">
           
-          <div class="contacto gmail">
-            <!-- <a href="https://mail.google.com/mail/u/0/?hl=es#advanced-search/to=gamasrikiest37%40gmail.com&query=in%3Asent&isrefinement=true&todisplay=Gamas?compose=new" target="_blank"><i class="fa fa-regular fa-envelope envelope"></i></a> -->
-            <a [href]="infoPaginaService.gmailRedirect" target="_blank"><i class="fa fa-regular fa-envelope envelope"></i></a>
-            <p>Gmail</p>
-          </div>
-          <div class="contacto in">
-            <a [href]="infoPaginaService.linkedin" target="_blank"><i class="fab fa-linkedin-in linked" aria-hidden="true"></i></a>
-            <p>LinkedIn</p>
-          </div>
-          <div class="contacto whatsapp">
-            <a [href]="infoPaginaService.whatsAppRedirect" target="_blank"><i class="fab fa-brands fa-whatsapp"></i></a>
-            <p>WhatsApp</p>
-          </div>
-          <div class="contacto outlook">
-            <a [href]="infoPaginaService.outlookRedirect" target="_blank"><i class="fas fa-solid fa-at"></i></a>
-            <p>Outlook</p>
+          <div *ngFor="let contacto of infoPaginaService.contactos"
+          class="contacto">
+            <a [href]="contacto.url" target="_blank">
+              <i [class]="contacto.icon" [style]="'color:'+contacto.color"></i>
+              <p>{{contacto.name}}</p>
+            </a>
           </div>
         
         </div><!-- list-contacto -->

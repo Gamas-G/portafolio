@@ -383,6 +383,11 @@ background-color: #D50000;
   cursor: pointer;
 }
 
+.contacto p{
+  color: #000000;
+  font-weight: bold;
+}
+
 .contacto:hover{
   transform: scale(1.2);
   transition: transform .2s;

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { IHabilidades, IProyecto } from '../interfaces/proyecto-interface';
+import { Contacto } from '../interfaces/contacto';
 
 @Injectable({providedIn: 'root'})
 export class InfoPaginaService {
@@ -19,19 +20,20 @@ export class InfoPaginaService {
   public proyectos:IProyecto[]= [];
   public habilidades: IHabilidades[] = [];
 
+  public contactos:Contacto[] = [];
+
     
   constructor( private http: HttpClient ) { 
     this.cargarPortafolio(); 
+    // this.contacto = { name:'',color:'',icon:'',url:'' }
   }
 
   cargarPortafolio(){
     
     return new Promise( (resolve, reject) => {
-    // this.http.get('assets/data/data.json')
+
     this.http.get('https://my-portafolio-1c347-default-rtdb.firebaseio.com/portafolio.json')
       .subscribe( (resp: any) => {
-        
-        console.log(resp);
         
         this.me       = resp.data.me;
         this.cv       = resp.data.cv;
@@ -45,6 +47,8 @@ export class InfoPaginaService {
         
         this.proyectos   = resp.data.proyectos;
         this.habilidades = resp.data.habilidades;
+
+        this.contactos = resp.data.contacto;
 
       });
 

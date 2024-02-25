@@ -5,6 +5,6 @@ import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 
 export const routes: Routes = [
   { path:'home',  component: PortafolioComponent },
-  { path:'proyectos', component: ProyectosPageComponent },
+  // { path:'proyectos', component: ProyectosPageComponent },
   { path:'**',    pathMatch:'full', redirectTo: 'home' },
 ];
