@@ -41,8 +41,14 @@
           
           <div class="tecnologias">
             
+            <!-- <ul>
+              <li *ngFor="let tecnologia of proyecto.tecnologias" class="tecnologia">
+                <span><i [class]="tecnologia.icon"></i></span>
+              <p>{{tecnologia.name}}</p>
+              </li>
+            </ul> -->
             <div *ngFor="let tecnologia of proyecto.tecnologias" class="tecnologia">
-              <span><i [class]="tecnologia.icon"></i></span>
+              <span><i [class]="tecnologia.icon" [style]="'color: '+ tecnologia.color"></i></span>
               <p>{{tecnologia.name}}</p>
             </div>
           
@@ -66,6 +72,7 @@
         id="myBtn" 
         (click)="mostrarDialog(habilidad)"
         [class]="habilidad.style">
+        <i [class]="habilidad.icon"></i>
             {{habilidad.name}}
           </button>
       </div>
@@ -85,19 +92,20 @@
         <lottie-player src="https://lottie.host/62be1e7b-bf8c-4594-8336-d58e4bbba031/Na4VyQqjOS.json" background="transparent" speed="1" loop autoplay></lottie-player>
       </div>
       <div class="contactos">
-        <div class="contacto gmail">
-          <a href="https://mail.google.com/mail/u/0/?hl=es#advanced-search/to=gamasrikiest37%40gmail.com&query=in%3Asent&isrefinement=true&todisplay=Gamas?compose=new" target="_blank"><i class="fa fa-regular fa-envelope envelope"></i></a>
+        <div (click)="dialogContact()" class="contacto gmail">
+          <!-- <a href="https://mail.google.com/mail/u/0/?hl=es#advanced-search/to=gamasrikiest37%40gmail.com&query=in%3Asent&isrefinement=true&todisplay=Gamas?compose=new" target="_blank"><i class="fa fa-regular fa-envelope envelope"></i></a> -->
+          <a><i class="fa fa-regular fa-envelope envelope"></i></a>
           <p>Gmail</p>
         </div>
         <div class="contacto in">
-          <a href="https://www.linkedin.com/in/luis-gerardo-gamas-de-la-cruz-762a56268/" target="_blank"><i class="fab fa-linkedin-in linked" aria-hidden="true"></i></a>
+          <a [href]="infoPaginaService.linkedin" target="_blank"><i class="fab fa-linkedin-in linked" aria-hidden="true"></i></a>
           <p>LinkedIn</p>
         </div>
         <div class="contacto whatsapp">
-          <a><i class="fab fa-brands fa-whatsapp"></i></a>
+          <a [href]="infoPaginaService.whatsAppRedirect"><i class="fab fa-brands fa-whatsapp"></i></a>
           <p>WhatsApp</p>
         </div>
-        <div class="contacto outlook">
+        <div (click)="dialogContact()" class="contacto outlook">
           <a><i class="fas fa-solid fa-at"></i></a>
           <p>Outlook</p>
         </div>

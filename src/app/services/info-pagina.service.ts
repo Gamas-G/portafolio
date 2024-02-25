@@ -8,9 +8,17 @@ export class InfoPaginaService {
   
   public speetch: string = "";
   public cv: string = "";
+  public me: string = "";
+  public linkedin: string = "";
+  public github: string = "";
+
+  public whatsAppRedirect: string = "";
+  public gmailRedirect: string    = "";
+  public outlookRedirect: string  = "";
+  
   public proyectos:IProyecto[]= [];
   public habilidades: IHabilidades[] = [];
-  public me: string = "";
+
     
   constructor( private http: HttpClient ) { 
     this.cargarPortafolio(); 
@@ -22,13 +30,20 @@ export class InfoPaginaService {
     // this.http.get('assets/data/data.json')
     this.http.get('https://my-portafolio-1c347-default-rtdb.firebaseio.com/portafolio.json')
       .subscribe( (resp: any) => {
+        
         console.log(resp);
-        this.speetch   = resp.data.speetch;
-        this.cv        = resp.data.cv;
-        this.proyectos = resp.data.proyectos;
+        
+        this.me       = resp.data.me;
+        this.cv       = resp.data.cv;
+        this.github   = resp.data.github;
+        this.speetch  = resp.data.speetch;
+        this.linkedin = resp.data.linkedin;
+
+        this.whatsAppRedirect = resp.data.whatsapp;
+        
+        this.proyectos   = resp.data.proyectos;
         this.habilidades = resp.data.habilidades;
 
-        this.me = resp.data.me;
       });
 
     });

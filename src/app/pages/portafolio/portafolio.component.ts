@@ -7,6 +7,7 @@ import { InfoPaginaService } from '../../services/info-pagina.service';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from '../../components/dialog/dialog.component';
 import { IHabilidades } from '../../interfaces/proyecto-interface';
+import { DialogContatComponent } from '../../components/dialog-contact/dialog-contact.component';
 
 @Component({
     selector: 'app-portafolio',
@@ -34,6 +35,10 @@ export class PortafolioComponent{
       } 
     });
     
+  }
+
+  dialogContact(){
+    this.dialog.open(DialogContatComponent);
   }
 
 }

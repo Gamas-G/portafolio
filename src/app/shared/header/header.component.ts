@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA, Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
+import { InfoPaginaService } from '../../services/info-pagina.service';
 
 @Component({
     selector: 'app-header',
@@ -15,7 +16,8 @@ export class HeaderComponent {
   @ViewChild('navLinks') navLinks?: ElementRef;
   public showNavLink: boolean = false;
     
-  constructor(private renderer: Renderer2) {}
+  constructor( public infoPaginaService: InfoPaginaService,
+               private renderer: Renderer2) {}
 
   showNavLinks(){
     

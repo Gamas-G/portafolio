@@ -13,13 +13,15 @@ export interface Enlaces {
 }
 
 export interface Tecnologia {
-  icon: string;
-  name: string;
+  icon:  string;
+  name:  string;
+  color: string;
 }
 
 export interface IHabilidades{
   name: string;
   style: string;
+  icon: string;
   frameworks: Framework[];
   lenguajes: Lenguaje[];
 }
